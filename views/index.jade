@@ -1,0 +1,99 @@
+extends layout
+
+block content
+  // Navbar
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .container
+      a.navbar-brand(href='#')
+        .logobrg LOGO
+          //- img(src="/images/logo.png", alt="")
+          
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse.justify-content-end
+        ul.navbar-nav
+          li.nav-item.active
+            a.nav-link(href='#') Beranda
+          li.nav-item
+            a.nav-link(href='#') Fitur
+  // Hero
+  .hero
+    .container
+      .row
+        .col-md-5
+          .hero-hp
+            img(src='/images/HP.png', alt='')
+        .col-md-7
+          .slogan
+            h1
+              | Punya barang idaman?
+            p
+              | Papertip adalah cara baru berbelanja yang lebih mudah dan nyaman. Temukan barang-barang idaman di berbagai kota dan negara hanya untuk kamu.
+          .download
+            a(href='')
+              img(src='/images/google.png', alt='' data-aos="zoom-in-up")
+            a(href='')
+              img(src='/images/apple.png', alt='' data-aos="zoom-in-up")
+  // Fitur
+  .text-fitur.text-center
+    h3 Fitur
+  .list-fitur.text-center
+    .container
+      .row
+        .col-lg-4.bag-fitur
+          h5 Explore
+          img(src='/images/explore.png', alt='' data-aos='flip-left')
+          p
+            | pingin titip tapi bingung? kami memiliki menu explor dimana kamu bisa melihat barang yang sedang open dari dalam negeri maupun luar negeri
+        .col-lg-4.bag-fitur
+          h5 Chatting
+          img(src='/images/chat.png', alt='' data-aos='flip-left')
+          p
+            | tidak usah khawatir soal berkomunikasi, karena kamu bisa chatting dan bertanya seputar produk tersayang dengan traveler yang membuka jasa titipan
+        .col-lg-4.bag-fitur
+          h5 Safe payment
+          img(src='/images/safe.png', alt='' data-aos='flip-left')
+          p
+            | pembayaran tetap aman hingga barang sampai ketangan anda dan sama-sama deal buat meneruskan transaksi bahwasannya sukses
+  // Footer
+  footer.footer-color
+    .container
+      .row
+        .col-lg-4
+          h6
+            | Jalan Sei Belumai Hillir No.106, Tanjung Morawa - A, Sumatera Utara 20362, Indonesia.
+          .information
+            i.fas.fa-phone
+            a(href='tel:+6289508519159') +62 895-0851-9159
+          .information
+            i.fas.fa-sms
+            a(href='tel:+6289508519159') +62 895-0851-9159
+          .information
+            i.fab.fa-whatsapp
+            a(href='tel:+6289508519159') +62 895-0851-9159
+          .information
+            i.fab.fa-line
+            a(href='https://line.com/fachrudhr') add : fachrudhr
+      .row.foot-bag-two
+        .col-lg-4
+          h6.terms
+            a(href='') Terms & Condition
+        .col-lg-4.text-center
+          .iconsos
+            a(href='')
+              i.fab.fa-facebook
+            a(href='')
+              i.fab.fa-twitter
+            a(href='')
+              i.fab.fa-instagram
+            a(href='')
+              i.fab.fa-youtube
+        .col-lg-4.text-center
+          h6.copyright Copyright © 2018 | Jasatitip Solvee.id
+  // Optional JavaScript
+  // jQuery first, then Popper.js, then Bootstrap JS
+  script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+  script(src='/javascripts/bootstrap.min.js')
+  script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+  script(src='/javascripts/script.js')

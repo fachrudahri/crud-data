@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  div
+    a(href="/") Home
+  div
+    form(method='post' action='/update')
+      input(type="hidden" name='code' value='#{student.code}')
+      p Name :
+      input(type='text' name='name' value='#{student.name}')
+      p Departement :
+      input(type='text' name='departement' value='#{student.departement}')
+      p Age :
+      input(type='text' name='age' value='#{student.age}')
+      button(type='submit') update
